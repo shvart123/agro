@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агроусадьба У Володи</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/button up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="btn-up btn-up_hide"></div>
+
+    <header class="header">
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">АгроУсадьба
+                              "У Володи"</a>
+
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li class="nav-item"> <a href="2.html" class="nav-link">Фотогалерея</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Музей</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">О нас </a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Связаться с нами</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Header content -->
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading"> Фотоальбом
+ <br> <span></span></h1>
+                    Фотоальбом собран из множества фотографий, снятых нами и нашими гостями в разный период. Мы приглашаем Вас провести романтическое свидание, выходные вдвоём, семейный уик-энд или устроить грандиозный праздник в большой компании. Полный набор гостиничных услуг способны подарить множество новых эмоций и незабываемых впечатлений на долгое время!
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="./img/header/hero-mobile.jpg">
+                        <img src="./img/header/hero.jpg" alt="">
+                    </picture>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <section class="portfolio">
+        <div class="container" >
+            <div class="gallery">
+
+<img src="img/galery/1.png" alt="Image 4"  data-aos="zoom-in"class="gallery-img" onclick="showImage(src)" >
+<img src="img/galery/2.png" alt="Image 5" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+<img src="img/galery/3.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/4.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/5.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/6.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/7.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/8.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+         <img src="img/galery/9.png" alt="Image 6" class="gallery-img" onclick="showImage(src)" data-aos="zoom-in">
+</div>
+   
+  <!-- Image containter where image will show in big size -->
+      <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+        
+      </div>
+
+    </section>
+
+    <footer class="contacts">
+        <div class="container">
+            <div class="contacts-title">
+                <h2 class="title-1">Contacts</h2>
+            </div>
+            <div class="contacts-content" data-aos="fade-down">
+                <p>Остались вопросы?<br>  Тогда напишите нам</p>
+            </div>
+            <div class="contacts-button" data-aos="fade-down">
+                <a href="#!" class="btn">Связаться с нами</a>
+            </div>
+            <div class="contacts-social" data-aos="zoom-in">
+                <a href="#!"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/"><img src="./img/socials/Instargam.svg" alt="Instargam"></a>
+                <a href="https://web.telegram.org/"><img src="./img/icons/telegs.png" alt="Behance"></a>
+                <a href="#!"><img src="./img/socials/Dribble.svg" alt="Dribble"></a>
+            </div>
+
+           
+            <div class="contacts-footer" data-aos="fade-up">
+                <p>Нас также можно найти в <br> LinkedIn, Instagram, Telegram, Dribble</p>
+            </div>
+        </div>
+         <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+        
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/buttonup.js"></script>
+
+</body>
+</html>
