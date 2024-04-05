@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агроусадьба У Володи</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/button up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="btn-up btn-up_hide"></div>
+
+    <header class="header">
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">АгроУсадьба
+                              "У Володи"</a>
+
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li class="nav-item"> <a href="2.html" class="nav-link">Фотогалерея</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Музей</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">О нас </a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Наши цены</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Header content -->
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading"> 
+ <br> <span> Мы рады каждому гостю</span></h1>
+ <h2 class="header-heading3"> 
+ <br> <span> Минская область, Смолевичский район, д. Калюжки, ул. Васильковая, д. 1а</span>
+ <br> <span> +375(25)235-45-54</span></h2>
+                 
+
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="./img/header/hero-mobile.jpg">
+                        <img src="./img/portfolio/1.png" alt="">
+                    </picture>
+
+
+                </div>
+            </div>
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading"> 
+ <br> <span> </span></h1>
+ <h2 class="header-heading3"> 
+ <br> <span> </span>
+ <br> <span> Оставьте заявку и мы свяжемся с вами </span></h2>
+                 
+<form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+  <!-- Поле ввода имени -->
+  <input class="input" name="name" type="text" placeholder="Ваше имя" />
+  <br>
+  <!-- Поле ввода почты  -->
+  <input class="input" name="email" type="text" placeholder="Ваша почта" />
+  <br>
+  <!-- Поле ввода для темы сообщения -->
+  <input  class="input" size="30" name="header" type="text" placeholder="Тема" />
+  <br>
+  <!-- Текстовое поле для самого сообщения -->
+  <textarea cols="32" name="message" rows="5"> Текст сообщения
+  </textarea>
+  <br>
+  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+  <input class="input" type="submit" value="Отправить" />
+</form>
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        
+                       
+                    </picture>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+   
+
+    <footer class="contacts">
+        <div class="container">
+            <div class="contacts-title">
+                <h2 class="title-1">Contacts</h2>
+            </div>
+            <div class="contacts-content" data-aos="fade-down">
+                <p>Остались вопросы?<br>  Тогда напишите нам</p>
+            </div>
+            <div class="contacts-button"  onclick="togglePopup()" data-aos="fade-down">
+                <a href="#!" class="btn">Связаться с нами</a>
+            </div>
+            <div class="contacts-social" data-aos="zoom-in">
+                <a href="#!"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/"><img src="./img/socials/Instargam.svg" alt="Instargam"></a>
+                <a href="https://web.telegram.org/"><img src="./img/icons/telegs.png" alt="Behance"></a>
+                <a href="#!"><img src="./img/socials/Dribble.svg" alt="Dribble"></a>
+            </div>
+
+           
+            <div class="contacts-footer" data-aos="fade-up">
+                <p>Нас также можно найти в <br> LinkedIn, Instagram, Telegram, Dribble</p>
+            </div>
+        </div>
+         <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+        
+      </div>
+    </footer>
+     <div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: green;"></h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Номер телефона 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Введите ваш номер телефона" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Ваше имя:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Введите ваш имя"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Отправить
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()"> 
+              Закрыть
+              </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/buttonup.js"></script>
+
+</body>
+</html>
