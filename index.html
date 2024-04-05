@@ -25,7 +25,7 @@
                         <li class="nav-item"><a href="#!" class="nav-link active">Главная</a></li>
                         <li class="nav-item"><a href="2.html" class="nav-link">Фотогалерея</a></li>
                         <li class="nav-item"><a href="#!" class="nav-link">Музей</a></li>
-                        <li class="nav-item"><a href="#!" class="nav-link">О нас </a></li>
+                        <li class="nav-item"><a href="3.html" class="nav-link">О нас </a></li>
                         <li class="nav-item"><a href="#!" class="nav-link">Связаться с нами</a></li>
                     </ul>
                     <button id="nav-btn" class="nav-button">
@@ -42,7 +42,7 @@
  <br> <span></span></h1>
                     <p>Усадьба включает в себя:
 
-<p- благоустроенную территорию</p>
+<p- благоустроенную территорию </p>
 
 <p>- парковку на 3 машины</p>
 
@@ -139,8 +139,8 @@
             <div class="contacts-content" data-aos="fade-down">
                 <p>Остались вопросы?<br>  Тогда напишите нам</p>
             </div>
-            <div class="contacts-button" data-aos="fade-down">
-                <a href="#!" class="btn">Связаться с нами</a>
+            <div class="contacts-button" onclick="togglePopup()" data-aos="fade-down">
+                <a href="#!" class="btn">Связаться с нами </a>
             </div>
             <div class="contacts-social" data-aos="zoom-in">
                 <a href="#!"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
@@ -158,6 +158,36 @@
         
       </div>
     </footer>
+    <div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: green;"></h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Номер телефона 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Введите ваш номер телефона" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Ваше имя:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Введите ваш имя"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Отправить
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()"> 
+              Закрыть
+              </button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
