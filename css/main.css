@@ -16,6 +16,7 @@ body {
 .title-1 {
     font-size: 34px;
     font-weight: 600;
+    margin-top: 100px;
 }
 
 .btn {
@@ -187,6 +188,12 @@ body {
     margin-bottom: 40px;
     height: 50%;
     width: 50%;
+ transition: 1s; /* Время эффекта */
+     /* Убираем небольшой отступ снизу */
+}
+.project-img:hover{
+    transform: scale(1.1);
+    
 }
 
 .project-title {
@@ -245,7 +252,14 @@ body {
     align-items: center; 
   }
  
- 
+ .gallery{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+    .gallery-img{
+        width:150px;
+        height: 150px;
+    }
   .gallery-img {
     width: 200px;
     height: 200px;
@@ -254,7 +268,7 @@ body {
   }
   /* onHover image will expand little bit */
   .gallery-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     cursor: zoom-in;
   }
   
@@ -413,4 +427,58 @@ textarea {
     font-weight: 700;
     font-size: 24px;
     color: #FFF;
+}
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size:60px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .close-button:hover{
+    color: red;
+  }
+
+ .black-block img{
+
+height: 400px;
+width: 100%;
+padding-top:100px;
+
+    }
+
+    .left-title,
+.left-text,
+.right-button{
+    text-align: center;
+}
+.right-button{
+    margin-top: -300px;
+}
+.block-holder{
+    display: block;
+}
+.left-title{
+    color:#D67E34;
+    font-family: 'Tinos', self;
+    font-size: 54px;
+    font-weight: 400;
+   margin-top: -300px;
+   padding: 20px;
+     
+}
+.btn-open-popup{
+     background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;padding: 14px 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 310px; 
+   
+
+}
+*/ открыть форму*/
+.btn-open-popup:hover{
+     background-color: #ff740078;
 }
