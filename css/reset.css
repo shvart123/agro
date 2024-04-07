@@ -50,7 +50,7 @@ a:after{
     left: 0;
     bottom: -3px;
     height: 2px; /* Высота линии */
-    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    background-color: black; /* Цвет подчеркивания при появлении линии*/
     transition: width 0.5s;  /* Время эффекта */
 }
 a:hover  {
